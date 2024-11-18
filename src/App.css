@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-size: 1.6rem;
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+	color: #231815;
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		font-size: 1.4rem;
+	}
+}
+
+.p-quote {
+  max-width: 1000px;
+  margin: 0 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	.p-quote {
+		padding: 16px;
+	}
+}
+
+.p-quote__title-wrap {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+	.p-quote__title-wrap {
+		flex-direction: column;
+	}
+}
+
+.c-heading-01 {
+  font-size: 4rem;
+}
+
+.p-quote__title-wrap time {
+	margin-left: 32px;
+	font-size: 2.4rem;
+}
+
+@media screen and (max-width: 767px) {
+	.p-quote__title-wrap time {
+		margin-left: 0;
+	}
+}
+
+.p-quote__item {
+	margin-top: 32px;
+}
+
+.p-quote__author {
+  font-size: 2.4rem;
+	font-weight: bold;
+  color: #959595;
+}
+
+.p-quote__text-wrap {
+	margin-top: 8px;
+}
+
+.c-button-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 24px;
+	text-align: center;
+}
+
+.c-button-01 {
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+	transition: all .5s;
+}
+
+@media screen and (max-width: 767px) {
+	.c-button-01 {
+		padding: 8px 16px;
+	}
+}
+
+.c-button-01:hover {
+  opacity: .7;
+}
+
+.c-button-01:not(:first-of-type) {
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 767px) {
+	.c-button-01:not(:first-of-type) {
+		margin-left: 16px;
+	}
+}
+
+.c-button--blue {
+	background: #0655aa;
+}
+
+.c-button--copy {
+	background: #999;
+}
